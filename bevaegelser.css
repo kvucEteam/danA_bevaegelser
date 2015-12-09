@@ -1,0 +1,80 @@
+.selected_class {
+    background-color: #C915E9;
+    font-weight: bold;
+}
+
+.sortable_text_container {
+    background-color: #fff;
+    cursor: pointer;
+    font-family: OPEN SANS;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 10px 160px 10px 10px;
+    width: 750px;
+    box-shadow: 1px 1px 1px #ddd;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    }
+
+    .sortable_container{
+        display: flex;
+    }
+
+.shadow {
+    box-shadow: 4px 4px 2px #ddd;
+}
+
+.instruktion {
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding:5px;
+    font-weight: 400;
+}
+
+.glyphicon-arrow-right{
+    color:#05A0A8;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.icon_container{
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.img_heli, .img_magnify{
+    
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px;
+    opacity: .6
+    
+}
+
+.titel {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.img_heli{
+    background-color: #FAE3F4;
+}
+
+.img_magnify{
+    background-color: #E2FDEE;
+}
+.btn{
+    width: auto;
+}
+
+.task_tekst{
+    color:gren;
+}
