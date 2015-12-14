@@ -6,13 +6,11 @@
 .sortable_text_container {
     background-color: #fff;
     cursor: pointer;
-    font-family: OPEN SANS;
     font-size: 14px;
     line-height: 1.7;
-    margin-top: 10px;
+    margin-bottom: 10px;
     overflow: auto;
-    padding: 10px 160px 10px 10px;
-    width: 750px;
+    padding: 20px 10% 20px 20px;
     box-shadow: 1px 1px 1px #ddd;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -20,12 +18,11 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
 
-    }
-
-    .sortable_container{
-        display: flex;
-    }
+.sortable_container {
+    display: flex;
+}
 
 .shadow {
     box-shadow: 4px 4px 2px #ddd;
@@ -34,47 +31,59 @@
 .instruktion {
     border-top: 2px solid #ddd;
     border-bottom: 2px solid #ddd;
-    padding:5px;
+    padding: 5px;
     font-weight: 400;
 }
 
-.glyphicon-arrow-right{
-    color:#05A0A8;
-    font-size: 16px;
+.glyphicon-arrow-right {
+    color: #05A0A8;
+    font-size: 18px;
     margin-right: 10px;
 }
 
-.icon_container{
-    margin-left: 10px;
+.icon_container {
+    margin-left: 30px;
     margin-top: 10px;
     cursor: pointer;
 }
 
-.img_heli, .img_magnify{
-    
+.img_heli,
+.img_magnify {
     border-radius: 4px;
-    padding: 4px;
-    margin: 3px;
-    opacity: .6
-    
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    opacity: 0.6;
+    color: #111;
+    width: 40px;
+}
+
+.img_heli:hover,
+.img_magnify:hover {
+    opacity: 1;
 }
 
 .titel {
-    font-size: 20px;
     font-style: italic;
 }
 
-.img_heli{
-    background-color: #FAE3F4;
+.img_heli {
+    background-color: #f2b9e1
 }
 
-.img_magnify{
-    background-color: #E2FDEE;
+.img_magnify {
+    background-color: #73f9a9
 }
-.btn{
+
+.btn {
     width: auto;
 }
 
-.task_tekst{
-    color:gren;
+.task_tekst {
+    color: gren;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
