@@ -3,37 +3,49 @@
         "header": "Bevægelser i teksten 1",
         "instruktion": "Placer tekststykkerne så de står i den rigtige rækkefølge",
         "instruktion_2": "Vælg for hvert tekststykke om den er i helikopterperspektiv eller zoomet ind",
-        "titel": "Kedsomhed"
+        "titel": "Rygning"
     },
     "quizdata": [{
 
-        "tekst": "Alle kender følelsen af at kede sig. Og alle husker ens forældres formanende replik: ”Intelligente mennesker keder sig aldrig”. Og netop i disse år lever vi i en tid, hvor det nærmest anses for at være skammeligt at kede sig. Det må skyldes manglende fantasi, manglende netværk, manglende drive, kort sagt. Det er totalt taber-agtigt at kede sig.",
+        "tekst": "Gule negle og dårlige tænder. En for hurtig ældning af huden. Manglende forplantningsevne, for ikke at tale om manglende evne til i det hele taget at præstere på lagnet.",
         "placering": "0",
-        "type": "0",
-        "feedback": "Sætninger som “alle kender ...” og “i disse år lever vi i en tid…” peger i retning af helikopteren. Her zoomes der ud, der tales generelt om kedsomhed uden konkrete eksempler. Det er meget almindeligt at indlede en artikel med sådanne generelle udsagn."
+        "type": "1",
+        "feedback": "Med rækken af konkrete eksempler på rygningens konsekvenser - neglene, tænderne, huden og forplantningsevnen - er der her zoomet ind. Forstørrelsesglassets nærhed kan give en indledning sanselig kvalitet og sikre nogle interessevækkende billeder for læseren."
     }, {
 
-        "tekst": "Men hvad hvis nu mennesket har brug for at kede sig? Hvad hvis nu det er den slags pauser vi har brug for, for senere at kunne være kreative og innovative og hvad det ellers hedder på smart nudansk.",
+        "tekst": "Vi kender alle til de skræmmende billeder af rygningens potentielle farer – rygere såvel som ikke-rygere. Rygning ikke bare dræber, men medfører alverdens dårligdomme.",
         "placering": "1",
         "type": "0",
-        "feedback": "Generelle udsagn om mennesket, som fx sætningen “Men hvad nu hvis mennesket har brug for at kede sig” vidner om at her er tale om helikopterperspektivet. Det er desuden meget almindeligt at slutte en indledning af med et spørgsmål, som peger frem mod artiklens midterdel: “Hvad hvis nu mennesket har brug for pauser”?"
+        "feedback": "Formuleringen “vi kender alle” og det konkluderende “rygning ikke bare dræber, men…” hæver beskrivelsen op på det generelle niveau og italesætter emnet på en overordnede måde."
     }, {
 
-        "tekst": "Vi gemmer os for kedsomheden. I køen i supermarkedet tjekker vi nyheder på vores smartphone, i toget lytter vi til podcasts, streamer film eller hører musik på spotify. Selv når vi er sammen med venner, er telefonen fremme, for hvis nu samtalen bliver lidt kedelig, så kan man altid lige tjekke seneste facebookopdatering.",
+        "tekst": "Med en hurtig googlesøgning på ordet ”rygning” er de første hits, man støder på: En annonce for produktet Nicorette, et nikotintyggegummi der skal hjælpe rygestoppet på vej, to hjemmesider fra Kræftens Bekæmpelse, én målrettet unge og én målrettet ældre. Det tredje hit er fra Sundhedsstyrelsen og handler om rygning og sygdom.",
         "placering": "2",
-        "type": "1",
-        "feedback": "Konkrete eksempler som “i køen i supermarkedet” og “sammen med venner” vidner om at der her zoomes ind. Forstørrelsesglasset anvendes til at dykke ned i et givent emne. Det er karakteristisk for en artikels midterdel. "
-    }, {
-
-        "tekst": "Pausen er pusterummet hvor man giver hjernen tid til at hvile sig. Man kigger ud af vinduet, man ser op mod skyerne, man tæller knasterne i det nylakerede gulv, man tømmer kort sagt sindet for alt. Det giver absolut ingen mening. Man stimuleres på ingen måde. Umiddelbart, for samtidig er det her at batterierne genoplades.",
-        "placering": "3",
-        "type": "1",
-        "feedback": "Konkrete eksempler som “man kigger ud af vinduet” og “tæller knasterne i det nylakerede gulv” vidner om at der her zoomes ind. Forstørrelsesglasset anvendes til at dykke ned i et givent emne. Det er karakteristisk for en artikels midterdel. "
-    }, {
-
-        "tekst": "Næste gang du keder dig, så pak telefonen væk og alt det andet elektroniske hejs, og gå ind i den store tomhed. Du kommer garanteret mere klar og fokuseret ud igen. At kede sig er det nye sort. Det er kort sagt kommet for at blive.",
-        "placering": "4",
         "type": "0",
-        "feedback": "Helikopterperspektivet er tydeligt i sætninger som “det bliver en samfundsmæssig revolution”, hvor der virkelig zoomes ud fra det konkrete (at tælle knaster) til hvad det har af konsekvenser for samfundet (revolution). Det er meget almindeligt at artiklers afslutning hæver sig op over det konkrete og kommer med nogle generelle kommentarer til perspektiver på det emne som artiklen har behandlet."
+        "feedback": "Her dykker vi igen ned i en række konkrete eksempler. Vi gør igen brug af forstørrelsesglasset. I midterdelen af en tekst bruges forstørrelsesglasset ofte til at udfolde flere interessante vinkler på tekstens emne."
+    }, {
+
+        "tekst": "På alle disse sider er rygningen som fænomen synonymt med risiko, fare, sygdom, forurening og død.",
+        "placering": "3",
+        "type": "0",
+        "feedback": "Vi hæver os op i helikopteren her og samler sammen på de konkrete eksempler, der er blevet bragt på banen. Igen understreges bevægelsen med ordene “på alle disse sider...”"
+    }, {
+
+        "tekst": "Og ikke bare på nettet er rygning en risikofyldt og farlig ting. I virkelighedens verden, på cafeer og barer rundt om i det ganske land, er rygerne i vidt omfang hensat til at trække ”frisk luft”, når de vil tænde op for tobakken.",
+        "placering": "4",
+        "type": "1",
+        "feedback": "Her vender vi tilbage til de konkrete eksempler med sammenligningen af “nettet” og “virkelighedens verden på cafeer og barer”"
+    }, {
+
+        "tekst": "For ikke bare aktiv rygning er farlig, men også passiv rygning udgør en fare, og derfor hører røgfyldte lokaler i en offentlige sammenhæng i dag absolut til sjældenhederne.",
+        "placering": "5",
+        "type": "0",
+        "feedback": "Her samles der igen op på de foregående eksempler, og vi hæver os op i helikopteren, da der på et overordnet plan reflekteres over sammenhængen mellem rygning og offentlige rum."
+    }, {
+
+        "tekst": "På den måde er nutidens fokus på rygning tæt forbundet med det generelle fokus på den sunde livsstil, som så markant præger vores samfundsmæssige selvforståelse i dag. Og kan det overhovedet være anderledes, fristes man måske til at spørge?",
+        "placering": "6",
+        "type": "0",
+        "feedback": "Helikopterperspektivet fortsættes her og gøres endnu mere markant. Nu tænkes rygningsfænomenet ind i en bredere samfundstendens. Det bliver bl.a. tydeligt med ordene “det generelle fokus” “Vores samfundsmæssige selvforståelse”. Afslutningsvist stilles et opsamlende spørgsmål, og teksten åbner således op for et muligt videre perspektiv."
     }]
 }

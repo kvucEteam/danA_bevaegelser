@@ -116,7 +116,7 @@ function tjek_svar(obj) {
             $(".checkAnswer").show().off();
 
             $(".checkAnswer").click(function() {
-                UserMsgBox("html", "<h3>Flot klaret!</h3><h4>Det er godt at huske på dennem måde at zoome ud og ind i teksten, når du selv skal skrive en tekst</h4><div class='btn btn-primary again'>PRØV IGEN</div>");
+                UserMsgBox("html", "<h3>Flot klaret!</h3><h4>Der findes mange måder at skrive en vellykket tekst på. Dog skal en enhver tekst bevæge sig. Man kan sammenligne det med en film. Det er først når kameraet begynder at bevæge sig og de enkelte kameraindstillinger klippes sammen, at tingene kommer til live. <br/>Teksten bevæger sig både gennem nogle faser, fra indledningen over midten til afslutningen og samtidig bevæger den sig skiftevis tæt på og på distancen i forhold til sit emne – den sætter noget under lup for derefter at bevæger sig op i helikopteren for at se tingene i en sammenhæng. <br/>Tekstens bevægelser er nødvendige, det er dem som giver teksten liv, nuancer og præcision. Det er dem, der sikrer, at teksten kommer sin læser i møde, og den der sikrer tekstens relevans.</h4><div class='btn btn-primary again'>PRØV IGEN</div>");
                 $(".MsgBox_bgr").off();
                 $(".again").click(function() {
 
