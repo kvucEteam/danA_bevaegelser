@@ -29,6 +29,7 @@ function loadData(url) {
 }
 
 function init() {
+    console.log(score);
     $(".titel").html(JsonObj.userInterface.titel);
     for (var i = 0; i < JsonObj.quizdata.length; i++) {
         console.log("i:" + i);
@@ -41,7 +42,7 @@ function init() {
     $(".checkAnswer").click(function() {
         tjek_svar();
     });
-    next_level();
+    //next_level();
 }
 
 $(".inner_container").sortable({
@@ -67,8 +68,9 @@ $(".inner_container").sortable({
 });
 
 function tjek_svar(obj) {
-    var score = 0;
+
     if (level == 0) {
+        score = 0;
         $('.sortable_container').each(function() {
             var classnum = $(this).attr('class').split(' ')[1]; //.index();
             var indeks = $(this).index().toString();
@@ -86,23 +88,35 @@ function tjek_svar(obj) {
             fejl++;
         }
     } else {
-        console.log(obj);
+        console.log("s: " + score);
+        console.log("object: " + obj);
         var classnum = obj.parent().parent().attr('class').split(' ')[1];
         var valgt_icon = obj.parent().parent().attr('class').split(' ')[2].toString().substring(5);
         console.log("inum:" + valgt_icon); //.index();
         console.log($(this).index());
         if (valgt_icon == JsonObj.quizdata[classnum].type) {
-            score++;
+            if (obj.index() == 0) {
+                obj.parent().parent().find(".sortable_text_container").css("background-color", "#FAE3F4"); //hide(); //("btn-icon").css("opacity", ".5");
+                obj.parent().find(".btn-icon").eq(1).hide();
+            } else {
+                obj.parent().parent().find(".sortable_text_container").css("background-color", "#E2FDEE"); //hide(); //("btn-icon").css("opacity", ".5");
+                obj.parent().find(".btn-icon").eq(0).hide();
+            }
             UserMsgBox("html", "<h3>Dit valg er <span class='label label-success'>Korrekt</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
             score++;
+            //$(".btn-icon").eq(valgt_icon).hide();
+            obj.parent().find(".btn-icon").off(); //"); //css("opacity", "0");
+            //console.log("obj.index: " + indeksss);
         } else {
             UserMsgBox("html", "<h3>Dit valg er <span class='label label-danger'>Forkert</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
+            obj.parent().parent().find(".sortable_text_container").css("background-color", "#FFF"); //hide(); //("btn-icon").css("opacity", ".5");
         }
         if (score >= 5) {
+            $(".checkAnswer").html("Færdig")
             $(".checkAnswer").show().off();
 
             $(".checkAnswer").click(function() {
-                UserMsgBox("html", "<h4>Du har nu lavet en kildeanalyse. Du havde " + fejl + " fejl.</h4><h5>Den samlede analysetekst:</h5><p></p><div class='btn btn-primary again'>PRØV IGEN</div>");
+                UserMsgBox("html", "<h3>Flot klaret!</h3><h4>Det er godt at huske på dennem måde at zoome ud og ind i teksten, når du selv skal skrive en tekst</h4><div class='btn btn-primary again'>PRØV IGEN</div>");
                 $(".MsgBox_bgr").off();
                 $(".again").click(function() {
 
@@ -112,6 +126,8 @@ function tjek_svar(obj) {
             });
         }
     }
+
+    console.log("score: " + score)
 }
 
 function next_level() {
@@ -120,16 +136,16 @@ function next_level() {
     level = 1;
     $('.inner_container').sortable('disable');
     $(".checkAnswer").hide();
-    $('.task').prepend("<img class='img_heli' src='img/helicopter.svg' ><b>Helikopterperspektiv </b> <br/>Med dette perspektiv forholder sig til et emne på et mere generelt niveau. Man zoomer ud. En sætning i helikopterperspektiv kunne lyde: “Verden står over for nogle store klimaudfordringer”. Det er det store perspektiv.<br/><br/><img class='img_magnify' src='img/zoom-in-solid.svg' ><b>Forstørrelsesglasset </b><br/>Her zoomer ind på et emne. En sætning kunne lyde: “Kantinen på min skole bør kun have økologiske madvarer”. Her er vi helt nede i den konkrete hverdag.<br/><br/>");
+    $('.task').prepend("<img class='img_heli img_top' src='img/helicopter.svg' ><b>Helikopterperspektiv </b> <br/>Dette perspektiv forholder sig til et emne på et mere generelt niveau. Man zoomer ud. En sætning i helikopterperspektiv kunne lyde: “Verden står over for nogle store klimaudfordringer”. Det er det store perspektiv.<br/><br/><img class='img_magnify img_top' src='img/zoom-in-solid.svg' ><b>Forstørrelsesglasset </b><br/>Her zoomer ind på et emne. En sætning kunne lyde: “Kantinen på min skole bør kun have økologiske madvarer”. Her er vi helt nede i den konkrete hverdag.<br/><br/>");
     $('.icon_container').each(function() {
         $(this).append("<div class='btn-icon'> <img class='img_heli' src='img/helicopter.svg' ></div><div class='btn-icon'> <img class='img_magnify' src='img/zoom-in-solid.svg' ></div>")
     });
     $(".btn-icon").click(function() {
         if ($(this).index() == 0) {
-            $(this).parent().parent().find(".sortable_text_container").css("background-color", "#FAE3F4"); //hide(); //("btn-icon").css("opacity", ".5");
+
             $(this).parent().parent().addClass("icon_0").removeClass("icon_1 icon_undefined");
         } else {
-            $(this).parent().parent().find(".sortable_text_container").css("background-color", "#E2FDEE"); //hide(); //("btn-icon").css("opacity", ".5");
+
             $(this).parent().parent().addClass("icon_1").removeClass("icon_0 icon_undefined");
         }
         tjek_svar($(this));

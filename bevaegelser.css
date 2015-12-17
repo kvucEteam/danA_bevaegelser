@@ -53,35 +53,41 @@
     padding: 5px;
     margin-bottom: 10px;
     margin-right: 10px;
-    opacity: 0.6;
     color: #111;
     width: 40px;
 }
 
-.img_heli:hover,
-.img_magnify:hover {
-    opacity: 1;
+
+
+.img_heli:hover{
+    background-color: #e56ec9;
+
+}
+.img_magnify {
+   background-color: #b5f8d5;
+   padding:8px;
 }
 
-.titel {
-    font-style: italic;
-}
 
 .img_heli {
     background-color: #f2b9e1
+
 }
 
-.img_magnify {
+.img_magnify:hover {
     background-color: #73f9a9
 }
+
+.img_top, .img_top:hover{
+background-color: transparent;
+}
+
 
 .btn {
     width: auto;
 }
 
-.task_tekst {
-    color: gren;
-}
+
 
 .btn-primary {
     margin-top: 20px;
