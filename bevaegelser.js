@@ -80,11 +80,11 @@ function tjek_svar(obj) {
         });
 
         if (score >= JsonObj.quizdata.length) {
-            UserMsgBox("html", "<h3>Placeringen af tekststykkerne er <span class='label label-success'>Korrekt</span> </h3><p>Du har placeret sætningerne i en fin rækkefølge!</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
+            UserMsgBox("body", "<h3>Placeringen af tekststykkerne er <span class='label label-success'>Korrekt</span> </h3><p>Du har placeret sætningerne i en fin rækkefølge!</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
             next_level();
 
         } else {
-            UserMsgBox("html", "<h3>Placeringen af tekststykkerne er <span class='label label-danger'>Forkert</span></h3><p>Prøv at se på sætningerne igen i forhold til indledning midte og afslutning.</p><div class='btn btn-info btn-next'>Gå TILBAGE TIL OPGAVEN</div>");
+            UserMsgBox("body", "<h3>Placeringen af tekststykkerne er <span class='label label-danger'>Forkert</span></h3><p>Prøv at se på sætningerne igen i forhold til indledning midte og afslutning.</p><div class='btn btn-info btn-next'>Gå TILBAGE TIL OPGAVEN</div>");
             fejl++;
         }
     } else {
@@ -102,21 +102,21 @@ function tjek_svar(obj) {
                 obj.parent().parent().find(".sortable_text_container").css("background-color", "#E2FDEE"); //hide(); //("btn-icon").css("opacity", ".5");
                 obj.parent().find(".btn-icon").eq(0).hide();
             }
-            UserMsgBox("html", "<h3>Dit valg er <span class='label label-success'>Korrekt</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
+            UserMsgBox("body", "<h3>Dit valg er <span class='label label-success'>Korrekt</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
             score++;
             //$(".btn-icon").eq(valgt_icon).hide();
             obj.parent().find(".btn-icon").off(); //"); //css("opacity", "0");
             //console.log("obj.index: " + indeksss);
         } else {
-            UserMsgBox("html", "<h3>Dit valg er <span class='label label-danger'>Forkert</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
+            UserMsgBox("body", "<h3>Dit valg er <span class='label label-danger'>Forkert</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
             obj.parent().parent().find(".sortable_text_container").css("background-color", "#FFF"); //hide(); //("btn-icon").css("opacity", ".5");
         }
         if (score >= 5) {
-            $(".checkAnswer").html("Færdig")
+            $(".checkAnswer").body("Færdig")
             $(".checkAnswer").show().off();
 
             $(".checkAnswer").click(function() {
-                UserMsgBox("html", "<h3>Flot klaret!</h3><h4>Der findes mange måder at skrive en vellykket tekst på. Dog skal en enhver tekst bevæge sig. Man kan sammenligne det med en film. Det er først når kameraet begynder at bevæge sig og de enkelte kameraindstillinger klippes sammen, at tingene kommer til live. <br/>Teksten bevæger sig både gennem nogle faser, fra indledningen over midten til afslutningen og samtidig bevæger den sig skiftevis tæt på og på distancen i forhold til sit emne – den sætter noget under lup for derefter at bevæger sig op i helikopteren for at se tingene i en sammenhæng. <br/>Tekstens bevægelser er nødvendige, det er dem som giver teksten liv, nuancer og præcision. Det er dem, der sikrer, at teksten kommer sin læser i møde, og den der sikrer tekstens relevans.</h4><div class='btn btn-primary again'>PRØV IGEN</div>");
+                UserMsgBox("body", "<h3>Flot klaret!</h3><h4>Der findes mange måder at skrive en vellykket tekst på. Dog skal en enhver tekst bevæge sig. Man kan sammenligne det med en film. Det er først når kameraet begynder at bevæge sig og de enkelte kameraindstillinger klippes sammen, at tingene kommer til live. <br/>Teksten bevæger sig både gennem nogle faser, fra indledningen over midten til afslutningen og samtidig bevæger den sig skiftevis tæt på og på distancen i forhold til sit emne – den sætter noget under lup for derefter at bevæger sig op i helikopteren for at se tingene i en sammenhæng. <br/>Tekstens bevægelser er nødvendige, det er dem som giver teksten liv, nuancer og præcision. Det er dem, der sikrer, at teksten kommer sin læser i møde, og den der sikrer tekstens relevans.</h4><div class='btn btn-primary again'>PRØV IGEN</div>");
                 $(".MsgBox_bgr").off();
                 $(".again").click(function() {
 
