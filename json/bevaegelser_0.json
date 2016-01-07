@@ -1,0 +1,27 @@
+{
+    "userInterface": {
+        "header": "Bevægelser i teksten 1",
+        "instruktion": "Placer tekststykkerne så de står i den rigtige rækkefølge",
+        "instruktion_2": "Vælg for hvert tekststykke om den er i helikopterperspektiv eller zoomet ind",
+        "titel": "Rygning"
+    },
+    "quizdata": [{
+
+        "tekst": "Kender du det, at du hver nytårsaften har en masse nytårsfortsætter? Sidste år lovede jeg mig selv, at jeg ville begynde til violin og stoppe med at ryge. Hvad skete der? Gæt selv.",
+        "placering": "0",
+        "type": "1",
+        "feedback": "Med rækken af konkrete eksempler på rygningens konsekvenser - neglene, tænderne, huden og forplantningsevnen - er der her zoomet ind. Forstørrelsesglassets nærhed kan give en indledning sanselig kvalitet og sikre nogle interessevækkende billeder for læseren."
+    }, {
+
+        "tekst": "Således meget klogere, har jeg spurgt mine venner, hvorfor de også har nytårsfortsættere. De mente, at nytårsfortsætter hører til at gøre status over et år der er gået, og peger frem mod det næste.",
+        "placering": "1",
+        "type": "0",
+        "feedback": "Formuleringen “vi kender alle” og det konkluderende “rygning ikke bare dræber, men…” hæver beskrivelsen op på det generelle niveau og italesætter emnet på en overordnede måde."
+    }, {
+
+        "tekst": "Afslutningsvis kan man sige, at det er en meget menneskelig ting at ville forandre sig. Jeg kan stadig nå at begynde at spille violin. Næste år!",
+        "placering": "2",
+        "type": "0",
+        "feedback": "Her dykker vi igen ned i en række konkrete eksempler. Vi gør igen brug af forstørrelsesglasset. I midterdelen af en tekst bruges forstørrelsesglasset ofte til at udfolde flere interessante vinkler på tekstens emne."
+    }]
+}
