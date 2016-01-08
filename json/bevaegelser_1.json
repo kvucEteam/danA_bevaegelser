@@ -1,8 +1,8 @@
 {
     "userInterface": {
-        "header": "Bevægelser i teksten 1",
-        "instruktion": "Placer tekststykkerne så de står i den rigtige rækkefølge",
-        "instruktion_2": "Vælg for hvert tekststykke om den er i helikopterperspektiv eller zoomet ind",
+        "header": "Skiftende perspektiv i tekster 1",
+        "instruktion": "Placer tekststykkerne, så de står i den rigtige rækkefølge.",
+        "instruktion_2": "Vælg for hvert tekststykke om det er i helikopterperspektiv eller zoomet ind.",
         "titel": "Kedsomhed"
     },
     "quizdata": [{

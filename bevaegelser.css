@@ -57,25 +57,26 @@
     width: 40px;
 }
 
-
+ 
 
 .img_heli:hover{
     background-color: #e56ec9;
 
 }
 .img_magnify {
-   background-color: #b5f8d5;
+    background-color: #ffff99;   
    padding:8px;
 }
 
 
 .img_heli {
-    background-color: #f2b9e1
+    background-color: #f2b9e1;
 
 }
 
 .img_magnify:hover {
-    background-color: #73f9a9
+
+    background-color: #f9f206;
 }
 
 .img_top, .img_top:hover{
