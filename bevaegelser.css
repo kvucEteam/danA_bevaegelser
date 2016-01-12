@@ -64,10 +64,9 @@
 
 }
 .img_magnify {
-    background-color: #ffff99;   
+    background-color: #b5f8d5;   
    padding:8px;
 }
-
 
 .img_heli {
     background-color: #f2b9e1;
@@ -76,7 +75,7 @@
 
 .img_magnify:hover {
 
-    background-color: #f9f206;
+    background-color: #73f9a9;
 }
 
 .img_top, .img_top:hover{
@@ -87,8 +86,6 @@ background-color: transparent;
 .btn {
     width: auto;
 }
-
-
 
 .btn-primary {
     margin-top: 20px;
