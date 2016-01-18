@@ -47,7 +47,6 @@ function init() {
 
 $(".inner_container").sortable({
     axis: 'y',
-    containment: 'parent',
     // animation speed
     sortAnimateDuration: 500,
     sortAnimate: true,
