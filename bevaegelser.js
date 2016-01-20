@@ -98,7 +98,7 @@ function tjek_svar(obj) {
                 obj.parent().parent().find(".sortable_text_container").css("background-color", "#FAE3F4"); //hide(); //("btn-icon").css("opacity", ".5");
                 obj.parent().find(".btn-icon").eq(1).hide();
             } else {
-                obj.parent().parent().find(".sortable_text_container").css("background-color", "#E2FDEE"); //hide(); //("btn-icon").css("opacity", ".5");
+                obj.parent().parent().find(".sortable_text_container").css("background-color", "#ffff99"); //hide(); //("btn-icon").css("opacity", ".5");
                 obj.parent().find(".btn-icon").eq(0).hide();
             }
             UserMsgBox("body", "<h3>Dit valg er <span class='label label-success'>Korrekt</span> </h3><p>" + JsonObj.quizdata[classnum].feedback + "</p><div class='btn btn-info btn-next'>GÅ VIDERE</div>");
