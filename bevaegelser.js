@@ -31,6 +31,9 @@ function loadData(url) {
 function init() {
     console.log(score);
     $(".titel").html(JsonObj.userInterface.titel);
+
+    $(".task").prepend("En tekst bevæger sig både gennem forskellige faser. Fra indledning over midte til afslutning. <br/>Samtidig bevæger den sig skiftevis tæt på og i distancen i forhold til sit emne. Teksten kan sætte noget under en lup for derefter at bevæge sig op i en helikopter for at se tingene i sammenhæng. <br/>Tekstens bevægelser er nødvendige. De giver teksten liv, nuancer og præcision, og det er dem, der gør, at teksten kommer læseren i møde, og sikrer tekstens relevans.");
+    
     for (var i = 0; i < JsonObj.quizdata.length; i++) {
         console.log("i:" + i);
         $(".inner_container").append("<div class ='sortable_container " + i + " icon_undefined'><div class='sortable_text_container'>" + JsonObj.quizdata[i].tekst + "</div><div class='icon_container'></div></div>");

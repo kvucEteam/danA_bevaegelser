@@ -91,3 +91,9 @@ background-color: transparent;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.task{
+    font-size: 14px;
+    width:60%;
+    margin-bottom: 30px;
+}
