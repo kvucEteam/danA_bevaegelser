@@ -153,3 +153,8 @@ function next_level() {
         tjek_svar($(this));
     });
 }
+
+
+$(document).ready(function() {
+    $('.instruktionInset').html(instruction('Placer tekststykkerne, så de står i den rigtige rækkefølge'));
+});
