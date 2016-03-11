@@ -141,7 +141,7 @@ function next_level() {
     $(".explanationText").html("");
     $('.explanationText').html("<img class='img_heli img_top' src='img/helicopter.svg' ><b>Helikopterperspektiv </b> <br/>Dette perspektiv forholder sig til et emne på et mere generelt niveau. Man zoomer ud. En sætning i helikopterperspektiv kunne lyde: “Verden står over for nogle store klimaudfordringer”. Det er det store perspektiv.<br/><br/><img class='img_magnify img_top' src='img/zoom-in-solid.svg' ><b>Forstørrelsesglasset </b><br/>Her zoomer man ind på et emne. En sætning kunne lyde: “Kantinen på min skole bør kun have økologiske madvarer”. Her er vi helt nede i den konkrete hverdag.<br/><br/>");
     $('.icon_container').each(function() {
-        $(this).append("<div class='btn-icon'> <img class='img_heli' src='img/helicopter.svg' ></div><div class='btn-icon'> <img class='img_magnify' src='img/zoom-in-solid.svg' ></div>")
+        $(this).append("<div class='btn-icon btn-icon_heli'> <img class='img_heli' src='img/helicopter.svg' >KLIK</div><div class='btn-icon btn-icon_magnify'> <img class='img_magnify' src='img/zoom-in-solid.svg' >KLIK</div>")
     });
     $(".btn-icon").click(function() {
         if ($(this).index() == 0) {

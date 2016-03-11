@@ -57,43 +57,53 @@
     width: 40px;
 }
 
- 
-
-.img_heli:hover{
-    background-color: #e56ec9;
-
-}
 .img_magnify {
-        background-color: #ffff99;     
-   padding:8px;
+    padding:7px;
 }
 
-.img_heli {
-    background-color: #f2b9e1;
-
+.img_top,
+.img_top:hover {
+    background-color: transparent;
 }
-
-.img_magnify:hover {
-
-       background-color: #f9f206;
-}
-
-.img_top, .img_top:hover{
-background-color: transparent;
-}
-
 
 .btn {
     width: auto;
 }
 
+.btn-icon {
+    height: 46px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding-left: 7px;
+    width: 109px;
+    padding-right: 7px;
+}
+
+.btn-icon_heli {
+    background-color: #f2b9e1;
+}
+
+.btn-icon_magnify {
+    background-color: #ffff99;
+}
+
+.btn-icon_heli:hover {
+    background-color: #e56ec9;
+}
+
+.btn-icon_magnify:hover {
+    background-color: #f9f206;
+}
+
+
+}
 .btn-primary {
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
-.task{
+.task {
     font-size: 14px;
-    width:60%;
+    width: 60%;
     margin-bottom: 30px;
 }
