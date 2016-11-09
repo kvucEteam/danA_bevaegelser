@@ -32,7 +32,7 @@ function init() {
     console.log(score);
     $(".titel").html(JsonObj.userInterface.titel);
 
-    $(".task").prepend("<div class='explanation'><div class='left glyphicon glyphicon-bookmark'></div><div class='left explanationText'>En tekst bevæger sig både gennem forskellige faser. Fra indledning over midte til afslutning. Samtidig bevæger den sig skiftevis tæt på og i distancen i forhold til sit emne. Teksten kan sætte noget under en lup for derefter at bevæge sig op i en helikopter for at se tingene i sammenhæng. <br/><br/>Tekstens bevægelser er nødvendige. De giver teksten liv, nuancer og præcision, og det er dem, der gør, at teksten kommer læseren i møde, og sikrer tekstens relevans.</div><div class='Clear'></div></div>");
+    $(".task").html(explanation("<div class='explanation'><div class='left explanationText'>En tekst bevæger sig både gennem forskellige faser. Fra indledning over midte til afslutning. Samtidig bevæger den sig skiftevis tæt på og i distancen i forhold til sit emne. Teksten kan sætte noget under en lup for derefter at bevæge sig op i en helikopter for at se tingene i sammenhæng. <br/><br/>Tekstens bevægelser er nødvendige. De giver teksten liv, nuancer og præcision, og det er dem, der gør, at teksten kommer læseren i møde, og sikrer tekstens relevans.</div><div class='Clear'></div></div>"));
     
     for (var i = 0; i < JsonObj.quizdata.length; i++) {
         console.log("i:" + i);
@@ -135,6 +135,7 @@ function tjek_svar(obj) {
 function next_level() {
     score = 0;
     $(".instruktion").html("<span class='glyphicon glyphicon-arrow-right'></span>" + JsonObj.userInterface.instruktion_2);
+
     level = 1;
     $('.inner_container').sortable('disable');
     $(".checkAnswer").hide();
